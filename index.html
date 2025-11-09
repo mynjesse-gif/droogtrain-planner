@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Droogtrain Planner – Jesse & Reny</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>Droogtrain Planner</h1>
+  <p class="subtitle">8-week schema – voeding, training & boodschappen</p>
+</header>
+
+<main>
+  <section class="controls">
+    <div class="row">
+      <label for="person">Persoon</label>
+      <select id="person">
+        <option value="jesse">Jesse (25, 178 cm, 89.5 kg)</option>
+        <option value="reny">Reny (48, 167 cm, 110 kg)</option>
+      </select>
+    </div>
+    <div class="row">
+      <label for="week">Week</label>
+      <select id="week"></select>
+    </div>
+    <div class="row">
+      <label for="day">Dag</label>
+      <select id="day"></select>
+    </div>
+  </section>
+
+  <section class="cards">
+    <article class="card">
+      <h2>Training</h2>
+      <div id="training"></div>
+    </article>
+
+    <article class="card">
+      <h2>Voeding (met porties)</h2>
+      <div id="meals"></div>
+    </article>
+
+    <article class="card">
+      <h2>Boodschappen (per week)</h2>
+      <div class="row">
+        <label><input type="checkbox" id="includeJesse" checked> Jesse</label>
+        <label><input type="checkbox" id="includeReny" checked> Reny</label>
+      </div>
+      <button id="btnList">Genereer boodschappenlijst voor deze week</button>
+      <div id="groceries"></div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>Gemaakt voor Jesse de Vries & Reny Kraaijenbrink • Werkt op GitHub Pages</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
